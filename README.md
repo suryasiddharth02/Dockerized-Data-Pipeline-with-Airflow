@@ -1,4 +1,4 @@
-#📈 Dockerized Stock Market Data Pipeline (Airflow + PostgreSQL)
+## 📈 Dockerized Stock Market Data Pipeline (Airflow + PostgreSQL)
 
 A fully containerized ETL pipeline that automatically fetches stock market data, processes it, and stores it in PostgreSQL — all orchestrated with Apache Airflow, running entirely inside Docker Compose.
 
