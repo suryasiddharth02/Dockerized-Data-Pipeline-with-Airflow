@@ -1,10 +1,10 @@
-📈 Dockerized Stock Market Data Pipeline (Airflow + PostgreSQL)
+#📈 Dockerized Stock Market Data Pipeline (Airflow + PostgreSQL)
 
 A fully containerized ETL pipeline that automatically fetches stock market data, processes it, and stores it in PostgreSQL — all orchestrated with Apache Airflow, running entirely inside Docker Compose.
 
 This project is designed for reliability, modularity, and easy deployment.
 
-🚀 Features
+## 🚀 Features
 
 Dockerized orchestration using Airflow
 
@@ -22,7 +22,7 @@ Persistent database storage
 
 Clean, scalable project structure
 
-📁 Project Structure
+## 📁 Project Structure
 .
 ├── docker-compose.yml
 ├── .env
@@ -32,7 +32,7 @@ Clean, scalable project structure
 │   └── fetch_and_store.py
 └── README.md
 
-🛠️ Prerequisites
+## 🛠️ Prerequisites
 
 You must have installed:
 
@@ -47,7 +47,7 @@ Verify:
 docker --version
 docker compose version
 
-🔧 Setup Instructions
+## 🔧 Setup Instructions
 1️⃣ Clone the Repository
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
@@ -92,7 +92,7 @@ Start Webserver + Scheduler
 
 Load your DAG
 
-🌐 Airflow Web UI
+## 🌐 Airflow Web UI
 
 Once running, open:
 
@@ -104,7 +104,7 @@ Username: admin
 
 Password: admin
 
-▶️ Running the Stock Pipeline
+## ▶️ Running the Stock Pipeline
 
 Inside Airflow:
 
@@ -114,7 +114,7 @@ Toggle it ON
 
 Click ▶ Run to trigger manually OR wait for scheduled time
 
-📊 Viewing Stored Stock Data
+## 📊 Viewing Stored Stock Data
 
 Connect to PostgreSQL inside Docker:
 
@@ -125,7 +125,7 @@ Query the table:
 
 SELECT * FROM stock_data;
 
-🧹 Stopping & Cleaning Up
+## 🧹 Stopping & Cleaning Up
 
 To stop all containers:
 
@@ -137,7 +137,7 @@ To remove containers + database data:
 
 docker compose down -v
 
-🐛 Troubleshooting
+## 🐛 Troubleshooting
 ❌ Airflow exited with code 1
 
 ✔ Likely wrong Fernet key or DB issue
@@ -152,7 +152,7 @@ Check port:
 
 lsof -i :8080
 
-🧩 Optional: Yahoo Finance Version (No API Key Needed)
+## 🧩 Optional: Yahoo Finance Version (No API Key Needed)
 
 If you prefer a version without API keys, replace the fetch script with:
 
@@ -161,10 +161,10 @@ import yfinance as yf
 
 Ask and I will generate the full Yahoo-Finance version.
 
-📜 License
+## 📜 License
 
 MIT License — free to use, modify, and distribute.
 
-🙌 Contribution
+## 🙌 Contribution
 
 Pull requests are welcome. For major changes, open an issue first to discuss what you’d like to change.
